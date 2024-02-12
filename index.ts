@@ -2,9 +2,9 @@ import fs from 'fs';
 import readline from 'readline';
 
 // Path to the input markdown file
-const inputFilePath = '../backend.md';
+const inputFilePath = '../ptc.md';
 // Path to the output shell script file
-const outputFilePath = './output_backend.sh';
+const outputFilePath = `'./output_${inputFilePath}.sh`;
 
 // Create a write stream for the output file
 const outputStream = fs.createWriteStream(outputFilePath, { flags: 'w' });

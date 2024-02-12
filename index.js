@@ -22,9 +22,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
 const readline_1 = __importDefault(require("readline"));
 // Path to the input markdown file
-const inputFilePath = '../backend.md';
+const inputFilePath = '../ptc.md';
 // Path to the output shell script file
-const outputFilePath = './output_backend.sh';
+const outputFilePath = `'./output_${inputFilePath}.sh`;
 // Create a write stream for the output file
 const outputStream = fs_1.default.createWriteStream(outputFilePath, { flags: 'w' });
 const processFile = () => __awaiter(void 0, void 0, void 0, function* () {
