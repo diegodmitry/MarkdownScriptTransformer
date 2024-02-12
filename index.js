@@ -24,7 +24,7 @@ const readline_1 = __importDefault(require("readline"));
 // Path to the input markdown file
 const inputFilePath = '../ptc.md';
 // Path to the output shell script file
-const outputFilePath = `'./output_${inputFilePath}.sh`;
+const outputFilePath = `./output_${inputFilePath.replace("../", "").replace(".md", "")}.sh`;
 // Create a write stream for the output file
 const outputStream = fs_1.default.createWriteStream(outputFilePath, { flags: 'w' });
 const processFile = () => __awaiter(void 0, void 0, void 0, function* () {
